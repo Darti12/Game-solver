@@ -75,7 +75,13 @@ def removeExploredStates(states):
 	return states
 
 def removeEqualStates(states):
-	return states
+	newstates = []
+	temp = []
+	temp = copy.deepcopy(states)
+	for x in range(0, len(temp)):
+		for y in range(x+1, len(temp)):
+			
+
 
 def stringify(CB):
 	word = ""

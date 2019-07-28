@@ -61,7 +61,7 @@ def getPossibleStates(CB):
 						NB[x+2][y] = 0
 						states.append(NB)
 	states = removeExploredStates(states)
-	print(len(states))
+	#print(len(states))
 	return states
 
 def removeExploredStates(states):
@@ -80,7 +80,8 @@ def removeEqualStates(states):
 	temp = copy.deepcopy(states)
 	for x in range(0, len(temp)):
 		for y in range(x+1, len(temp)):
-			
+			pass
+	return states
 
 
 def stringify(CB):
